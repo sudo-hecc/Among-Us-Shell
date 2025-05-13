@@ -17,7 +17,6 @@ A custom terminal interface written in Python, designed to simulate a minimal co
   - Custom `impo rm -rf <target>` syntax for educational simulation
 - Displays working directory in the prompt
 - Uses [`rich`](https://github.com/Textualize/rich) for styled terminal output
-- Optional audio support via [`pygame`](https://www.pygame.org/news) (for theme sound)
 
 ---
 
