@@ -25,7 +25,6 @@ A custom terminal interface written in Python, designed to simulate a minimal co
 
 - Python 3.8+
 - `rich`
-- (Optional) `pygame` for sound support
 
 Install dependencies:
 
