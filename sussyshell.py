@@ -1,0 +1,108 @@
+import sys
+from rich import print
+from rich.console import Console
+import random
+import os
+
+#====CLEAR IMMEDIANTLY====
+os.system("cls" if os.name == "nt" else "printf '\033c'")
+
+sys.stdout.write("\033]0;SUSSY SHELL\a")
+sys.stdout.flush()
+
+console = Console()
+console.print("[blue]Welcome to SUSSY SHELL[/blue]")
+
+if random.randint(0, 1) == 0:
+    role = "imposter"
+else:
+    role = "crewmate"
+console.print("[red]You are the Imposter. Kill everyone[/red]" if role == "imposter" else "[green]You are a Crewmate. Find the imposter[/green]")
+
+def main():
+    while True:
+        try:
+            user_input = console.input(f"[blue]{os.getcwd()} TASK: [/blue]")
+
+            if user_input == "exit":
+                if role == "imposter":
+                    console.print("[red]Crewmate wins! (imposter left game)[/red]")
+                else:
+                    console.print("[green]Exiting... Your crewmates shall find that imposter[/green]")
+                sys.exit()
+
+            elif user_input == "clear" or user_input == "clr":
+                os.system("cls" if os.name == "nt" else "printf '\033c'")
+
+            elif user_input == "neofetch":
+                console.print("""[red]
+                    ⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣯⢎⠀⠀⠀⠀⠀⠀
+                    ⠀⠀⠀⠀⣈⣼⣿⠿⠳⠳⠳⠳⠣⠀⢄⠀⠀⠀
+                    ⠀⠀⠀⣨⣿⣿⣿⣿⣿⣯⣮⣮⣮⣾⠇⠀⠀⠀
+                    ⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠀⠀⠀⠀
+                    ⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀
+                    ⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀
+                    ⠀⠀⣰⣿⣿⣿⡿⠓⠑⠱⣷⣿⣿⣿⠌⠀⠀⠀
+                    ⠀⠀⣿⣿⣿⣿⡇⠀⠀⠀⠀⢹⣿⣿⣷⠀⠀⠀
+                    created by [bold red]EESA AYUB (sudo-hecc on github)
+                    as an Amongus themed terminal. DON'T BE SUS[/bold red]
+                [/red]""")
+
+            elif user_input == "":
+                continue
+
+            elif user_input.startswith("impo rm -rf"):
+                if role == "imposter":
+                    if user_input[12:].lower() == "red":
+                        console.print("[bold red]AYO! YOU'RE RED! WHY ARE YOU TRYING TO DELETE YOURSELF?![/bold red]")
+                    else:
+                        console.print(f"[bold red]{user_input[12:].upper()} has been deleted[/bold red]")
+                else:
+                    console.print(f"[bold red]AYO THAT SUS! WHY ARE YOU TRYING TO DELETE {user_input[12:].upper()}?![/bold red]")
+            
+            elif user_input == "venv":
+                os.system("python3 -m venv venv; source venv/bin/activate")
+            
+            elif "python" in user_input:
+                output = "python3" + user_input[7:]
+                os.system(output)
+
+            elif "pip" in user_input:
+                output = "pip3" + user_input[4:]
+                os.system(output)
+
+            elif user_input.startswith("impo kill"):
+                if role == "imposter":
+                    console.print(f"[bold red]{user_input[10:].upper()} has been sabotaged[/bold red]")
+                else:
+                    console.print(f"[bold red]AYO THAT SUS! WHY ARE YOU TRYING TO SABOTAGE {user_input[10:].upper()}?![/bold red]")
+            
+            else:
+                try:
+                    if user_input.startswith("cd "):
+                        if user_input[3:].startswith("~/"):
+                            path = os.path.expanduser("~") + "/" + user_input[5:]
+                        else:
+                            path = user_input[3:]
+                        try:
+                            os.chdir(path)
+                        except FileNotFoundError:
+                            console.print(f"[red]SUSSY SHELL: No such folder: {path}[/red]")
+                        except NotADirectoryError:
+                            console.print(f"[red]SUSSY SHELL: Not a directory: {path}[/red]")
+                        except PermissionError:
+                            console.print(f"[red]SUSSY SHELL: Permission denied for: {path}[/red]")
+                    else:
+                        os.system(user_input)
+                except Exception as e:
+                    console.print(f"[red]SUSSY SHELL: Error executing command: {e}[/red]")
+
+        except KeyboardInterrupt:
+            if role == "imposter":
+                console.print("[red]Crewmate wins! (imposter left game)[/red]")
+            else:
+                console.print("[green]Exiting... Your crewmates shall find that imposter[/green]")
+            sys.exit()
+
+if __name__ == "__main__":
+    main()
