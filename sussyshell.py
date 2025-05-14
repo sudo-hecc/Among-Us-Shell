@@ -3,9 +3,25 @@ from rich import print
 from rich.console import Console
 import random
 import os
+import pygame
 
 #====CLEAR IMMEDIANTLY====
 os.system("cls" if os.name == "nt" else "printf '\033c'")
+
+path = os.path.expanduser("~")
+
+
+try:
+    pygame.init()
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    theme_path = os.path.join(script_dir, "themetune.mp3")
+    pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=512)
+    pygame.mixer.music.load(theme_path)
+    pygame.mixer.music.play(-1)
+    pygame.mixer.music.set_volume(1.0)  # Set volume to maximum (1.0)
+except pygame.error as e:
+    print(f"[red]Error loading theme tune: {e}[/red]")
+    print("[red]Make sure the 'themetune.mp3' file is in the same directory as this script.[/red]")
 
 sys.stdout.write("\033]0;SUSSY SHELL\a")
 sys.stdout.flush()
@@ -64,11 +80,11 @@ def main():
                 os.system("python3 -m venv venv; source venv/bin/activate")
             
             elif "python" in user_input:
-                output = "python3" + user_input[7:]
+                output = "python3 " + user_input[7:]
                 os.system(output)
 
             elif "pip" in user_input:
-                output = "pip3" + user_input[4:]
+                output = "pip3 " + user_input[4:]
                 os.system(output)
 
             elif user_input.startswith("impo kill"):
@@ -81,7 +97,7 @@ def main():
                 try:
                     if user_input.startswith("cd "):
                         if user_input[3:].startswith("~/"):
-                            path = os.path.expanduser("~") + "/" + user_input[5:]
+                            path + "/" + user_input[5:]
                         else:
                             path = user_input[3:]
                         try:
