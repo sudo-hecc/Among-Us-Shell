@@ -30,3 +30,6 @@ Install dependencies:
 
 ```bash
 pip3 install rich
+
+## Note
+It has been made primarily for Mac OS (using Unix terminals) so errors may occur on any other OS.
