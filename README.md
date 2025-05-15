@@ -24,7 +24,7 @@ A custom terminal interface written in Python, designed to simulate a minimal co
 
 - Python 3.8+
 - `rich`
-- A `themetune.mp3` file for `pygame` error may show. It can be found at https://tuna.voicemod.net/sound/24225899-3086-47e3-a873-1464e84586cf. Rename to `themetune.mp3`
+- A `themetune.mp3` file or `pygame` error may show. It can be found at https://tuna.voicemod.net/sound/24225899-3086-47e3-a873-1464e84586cf. Rename to `themetune.mp3`
 
 Install dependencies:
 
