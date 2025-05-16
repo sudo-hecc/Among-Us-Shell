@@ -46,7 +46,7 @@ python3 /path/to/amog.py
 ```
 or
 ```powershell
-python /path/to/amog.py
+python \path\to\amog.py
 ```
 ---
 
