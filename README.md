@@ -28,8 +28,12 @@ A custom terminal interface written in Python, designed to simulate a minimal co
 
 Install dependencies:
 
-```bash
-pip3 install rich
-```
+-```bash
+ pip3 install rich pygame
+ ```
+-```powershell
+ pip install rich pygame
+ ```
+
 ### Thanks to the creators of Amog OS for the idea.
 Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)
