@@ -31,6 +31,7 @@ Install dependencies:
 -```bash
  pip3 install rich pygame
  ```
+
 -```powershell
  pip install rich pygame
  ```
