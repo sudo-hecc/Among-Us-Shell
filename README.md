@@ -14,7 +14,8 @@ A custom terminal interface written in Python, designed to simulate a minimal co
   - `clear`
   - `exit`
   - `neofetch` (custom ASCII output)
-  - Custom `impo rm -rf <target>` syntax for educational simulation
+  - Custom `impo rm -rf <target>` to kill crew mate
+  - Custom `impo kill <target>` to stop the process of the target (basically sabotaging)
 - Displays working directory in the prompt
 - Uses [`rich`](https://github.com/Textualize/rich) for styled terminal output
 
