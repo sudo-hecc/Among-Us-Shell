@@ -36,6 +36,7 @@ or
 ```powershell
 pip install rich pygame
 ```
+---
 
 ### Thanks to the creators of Amog OS for the idea.
 Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)
