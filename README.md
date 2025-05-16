@@ -31,4 +31,4 @@ Install dependencies:
 ```bash
 pip3 install rich
 ```
-### Thanks to the creators of Amog OS for thhe idea.
+### Thanks to the creators of Amog OS for the idea.
