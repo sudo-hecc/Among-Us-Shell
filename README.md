@@ -14,8 +14,8 @@ A custom terminal interface written in Python, designed to simulate a minimal co
   - `clear`
   - `exit`
   - `neofetch` (custom ASCII output)
-  - Custom `impo rm -rf <target>` to kill crew mate
-  - Custom `impo kill <target>` to stop the process of the target (basically sabotaging)
+  - Custom `impo rm -rf <target>` to kill (`rm -rf` means delete) crew mate but stops red from killing itself (because it's the **imposter**)
+  - Custom `impo kill <target>` to stop - or `kill` - the process of the target (basically **sabotaging**)
 - Displays working directory in the prompt
 - Uses [`rich`](https://github.com/Textualize/rich) for styled terminal output
 
@@ -52,3 +52,5 @@ python \path\to\amog.py
 
 ### Thanks to the creators of Amog OS for the idea.
 Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)
+
+# DO NOT BE SUS 🤨
