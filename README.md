@@ -49,6 +49,11 @@ or download the `amog.bat` or `amog.command` file that is available from vesion 
 
 ---
 
+## License
+This project is licensed under the [MIT License](LICENCE.md). See the LICENSE file for details.
+
+---
+
 ## Thanks to the creators of Amog OS for the idea.
 **Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)**
 
