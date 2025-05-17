@@ -50,6 +50,6 @@ or download the `amog.bat` file that is available from vesion 2.0 onwards.
 ---
 
 ## Thanks to the creators of Amog OS for the idea.
-### Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)
+**Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)**
 
 # DO NOT BE SUS 🤨
