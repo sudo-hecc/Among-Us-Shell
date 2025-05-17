@@ -50,7 +50,7 @@ or download the `amog.bat` or `amog.command` file that is available from vesion 
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENCE.md). See the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE.md). See the LICENSE file for details.
 
 ---
 
