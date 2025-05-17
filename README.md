@@ -32,11 +32,11 @@ A custom terminal interface written in Python, designed to simulate a minimal co
 Install dependencies:
 
 ```bash
-pip3 install rich pygame
+pip3 install -r requirements.txt
 ```
 or
 ```powershell
-pip install rich pygame
+pip install -r requirements.txt
 ```
 ---
 
