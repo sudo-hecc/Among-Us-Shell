@@ -45,7 +45,7 @@ It is simple: just make the startup command:
 ```bash
 python3 /path/to/amog.py
 ```
-or download the `amog.bat` file that is available from vesion 2.0 onwards.
+or download the `amog.bat` or `amog.command` file that is available from vesion 4.0 onwards.
 
 ---
 
