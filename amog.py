@@ -8,9 +8,6 @@ import pygame
 #====CLEAR IMMEDIANTLY====
 os.system("cls" if os.name == "nt" else "printf '\033c'")
 
-path = os.path.expanduser("~")
-
-
 try:
     pygame.init()
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -96,8 +93,9 @@ def main():
             else:
                 try:
                     if user_input.startswith("cd "):
+                        path = os.path.expanduser("~")
                         if user_input[3:].startswith("~/"):
-                            path + "/" + user_input[5:]
+                            path = path + "/" + user_input[5:]
                         else:
                             path = user_input[3:]
                         try:
@@ -111,7 +109,7 @@ def main():
                     else:
                         os.system(user_input)
                 except Exception as e:
-                    console.print(f"[red]SUSSY SHELL: Error executing command: {e}[/red]")
+                    console.print(f"[red]SUSSY SHELL: {e}[/red]")
 
         except KeyboardInterrupt:
             if role == "imposter":
