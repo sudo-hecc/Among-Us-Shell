@@ -74,14 +74,14 @@ def main():
                     console.print(f"[bold red]AYO THAT SUS! WHY ARE YOU TRYING TO DELETE {user_input[12:].upper()}?![/bold red]")
             
             elif user_input == "venv":
-                os.system("python3 -m venv venv; source venv/bin/activate")
+                os.system("python3 -m venv venv; source venv/bin/activate" if os.name != "nt" else r"python -m venv venv; venv\Scripts\activate.bat")
             
             elif "python" in user_input:
-                output = "python3 " + user_input[7:]
+                output = "python3 " + user_input[8:] if os.name != "nt" else "python " + user_input[7:]
                 os.system(output)
 
             elif "pip" in user_input:
-                output = "pip3 " + user_input[4:]
+                output = "pip3 " + user_input[5:] if os.name != "nt" else "pip " + user_input[4:]
                 os.system(output)
 
             elif user_input.startswith("impo kill"):
@@ -95,7 +95,7 @@ def main():
                     if user_input.startswith("cd "):
                         path = os.path.expanduser("~")
                         if user_input[3:].startswith("~/"):
-                            path = path + "/" + user_input[5:]
+                            path = os.path.join(path, user_input[5:])
                         else:
                             path = user_input[3:]
                         try:
