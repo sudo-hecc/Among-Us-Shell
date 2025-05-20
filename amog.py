@@ -81,7 +81,7 @@ def main():
                 os.system(output)
 
             elif "pip" in user_input:
-                output = "pip3 " + user_input[5:] if os.name != "nt" else "pip " + user_input[4:]
+                output = "pip3 " + user_input[4:] if os.name != "nt" else "pip " + user_input[4:]
                 os.system(output)
 
             elif user_input.startswith("impo kill"):
@@ -120,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
