@@ -1,4 +1,5 @@
 import sys
+import readline
 from rich import print
 from rich.console import Console
 import random
