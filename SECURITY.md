@@ -19,4 +19,4 @@ Please do *not* intentionally break or exploit the project publicly. Just report
 
 ## Responsible Disclosure
 
-I'll do my best to fix serious issues quickly and thank you in the changelog (if appropriate).
+I'll do my best to fix serious issues quickly and thank you in the `CREDITS.md`
