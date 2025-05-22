@@ -1,4 +1,5 @@
 import sys
+import readline
 from rich import print
 from rich.console import Console
 import random
@@ -120,4 +121,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
