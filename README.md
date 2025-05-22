@@ -54,6 +54,11 @@ This project is licensed under the [MIT License](LICENSE.md). See the LICENSE fi
 
 ---
 
+## `CHANGELOG.md`
+The different release versions' differences for this project can be seen at the `CHANGELOG.md` file.
+
+---
+
 ## Thanks to the creators of Amog OS for the idea.
 **Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)**
 
