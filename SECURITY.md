@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Only the latest version of `sussyshell.py` (on the `main` branch) is actively maintained.
+Only the latest version of `amog.py` (on the `main` branch) is actively maintained.
 
 ## Reporting a Vulnerability
 
