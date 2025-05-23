@@ -50,12 +50,17 @@ or download the `amog.bat` or `amog.command` file that is available from vesion 
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENSE.md). See the LICENSE file for details.
+This project is licensed under the [MIT License](./LICENSE.md). See the LICENSE file for details.
 
 ---
 
 ## `CHANGELOG.md`
-The different release versions' differences for this project can be seen at the `CHANGELOG.md` file.
+The different release versions' differences for this project can be seen at the [`CHANGELOG.md`](./CHANGELOG.md) file.
+
+---
+
+## `CREDITS.md`
+Credits can be viewed at [`CREDITS.md`](./CREDITS.md)
 
 ---
 
