@@ -1,13 +1,15 @@
 @echo off
-REM Define the home directory
-set HOME_DIR=%USERPROFILE%
 
-REM Search for amog.py starting from the home directory
-for /r "%HOME_DIR%" %%i in (amog.py) do (
-    python "%%i"
-    goto :EOF
+REM Search for amog.py in the home directory
+for /f "delims=" %%i in ('where /r "%USERPROFILE%" amog.py 2^>nul') do (
+    set AMOG_PATH=%%i
+    goto :FOUND
 )
 
 REM If amog.py is not found, display an error message
-echo amog.py not found in the home directory or its subdirectories.
+echo Error: amog.py not found in your home directory.
 pause
+exit /b
+
+:FOUND
+python "%AMOG_PATH%"
