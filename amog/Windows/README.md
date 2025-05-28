@@ -50,4 +50,4 @@ pip install -r requirements.txt
 - Uses `rich` for styling text in the terminal
 
 ### Note:
-If you are on Windows, using Powershell is recommended for the ASCII escape codes used by [`rich`](https://github.com/Textualize/rich)
+Powershell is recommended for the ASCII escape codes used by rich
