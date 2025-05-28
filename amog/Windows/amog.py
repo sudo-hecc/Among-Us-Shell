@@ -26,13 +26,14 @@ sys.stdout.flush()
 console = Console()
 console.print("[blue]Welcome to SUSSY SHELL[/blue]")
 
-if random.randint(0, 1) == 0:
-    role = "imposter"
+role = random.choice(["imposter", "crewmate"])
+if role == "imposter":
+    console.print("[red]You are the Imposter. Kill everyone[/red]")
 else:
-    role = "crewmate"
-console.print("[red]You are the Imposter. Kill everyone[/red]" if role == "imposter" else "[green]You are a Crewmate. Find the imposter[/green]")
+    console.print("[green]You are a Crewmate. Find the imposter[/green]")
 
 def main():
+    global role
     while True:
         try:
             user_input = console.input(f"[blue]{os.getcwd()} TASK: [/blue]")
@@ -89,6 +90,15 @@ def main():
                     console.print(f"[bold red]{user_input[10:].upper()} has been sabotaged[/bold red]")
                 else:
                     console.print(f"[bold red]AYO THAT SUS! WHY ARE YOU TRYING TO SABOTAGE {user_input[10:].upper()}?![/bold red]")
+
+            elif user_input == "switch":
+                os.system("printf '\033c'")
+                if role == "imposter":
+                    console.print("[green]You are now a Crewmate. Find the imposter[/green]")
+                    role = "crewmate"
+                else:
+                    console.print("[red]You are now the Imposter. Kill everyone[/red]")
+                    role = "imposter"
             
             else:
                 try:
