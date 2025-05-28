@@ -42,6 +42,7 @@ pip3 install -r requirements.txt
 - `clr` or `clear` - clears the terminal.
 - `exit` launches into your default terminal such as `zsh` and displays a message based on your role.
 - On start, you have a 50/50 chance of being imposter or crew mate.
+- `switch` - changes role
 - Uses `pygame` to play Among Us theme tune.
 - Uses `rich` for styling text in the terminal.
 - Uses `readline` to fix the problems caused by the ASCII escape codes from `rich`.
