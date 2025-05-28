@@ -18,7 +18,7 @@ Welcome! This guide will help you get started with **Among-Us Shell**, a simple 
 ## 1. Requirements
 
 - Python 3.13 or newer installed  
-- Python packages: [`rich`](https://github.com/Textualize/rich) and [`pygame`](https://github.com/pygame/pygame)
+- Python packages: [`rich`](https://github.com/Textualize/rich), [`pygame`](https://github.com/pygame/pygame) and [`readline`](https://github.com/ludwigschwardt/python-gnureadline?tab=readme-ov-file)
 - A [`themetune.mp3`](https://tuna.voicemod.net/sound/24225899-3086-47e3-a873-1464e84586cf)
 
 ---
