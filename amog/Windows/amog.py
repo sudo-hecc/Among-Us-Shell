@@ -92,7 +92,7 @@ def main():
                     console.print(f"[bold red]AYO THAT SUS! WHY ARE YOU TRYING TO SABOTAGE {user_input[10:].upper()}?![/bold red]")
 
             elif user_input == "switch":
-                os.system("printf '\033c'")
+                os.system("cls")
                 if role == "imposter":
                     console.print("[green]You are now a Crewmate. Find the imposter[/green]")
                     role = "crewmate"
