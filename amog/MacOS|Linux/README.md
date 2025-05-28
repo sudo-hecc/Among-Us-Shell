@@ -30,10 +30,6 @@ Open your terminal and install the required Python packages by running:
 ```bash
 pip3 install -r requirements.txt
 ```
-or
-```powershell
-pip install -r requirements.txt
-```
 
 ---
 
