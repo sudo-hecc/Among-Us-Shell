@@ -1,5 +1,7 @@
 # Among-Us Shell
 
+![Screenshot](images/imposter.png)
+
 A custom terminal interface written in Python, designed to simulate a minimal command-line shell environment with themed responses and core command support. Developed as a learning project by [Eesa Ayub (sudo-hecc)](https://github.com/sudo-hecc), this shell features dynamic command execution, path navigation, and a themed startup experience.
 
 ---
