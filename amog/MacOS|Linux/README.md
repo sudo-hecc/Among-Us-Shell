@@ -44,7 +44,7 @@ pip3 install -r requirements.txt
 - On start, you have a 50/50 chance of being imposter or crew mate.
 - Uses `pygame` to play Among Us theme tune.
 - Uses `rich` for styling text in the terminal.
-- Uses `readline` to fix the problems caused by the ASCII codes from `rich`.
+- Uses `readline` to fix the problems caused by the ASCII escape codes from `rich`.
 
 ### Note:
-If you are on Windows, using Powershell is recommended for the ASCII escape codes used by [`rich`](https://github.com/Textualize/rich)
+If you are on Windows, using Powershell is recommended for the ASCII escape codes used by rich
