@@ -57,11 +57,6 @@ This project is licensed under the [MIT License](./LICENSE.md). See the LICENSE 
 
 ---
 
-## `CHANGELOG.md`
-The different release versions' differences for this project can be seen at the [`CHANGELOG.md`](./CHANGELOG.md) file.
-
----
-
 ## `CREDITS.md`
 Credits can be viewed at [`CREDITS.md`](./CREDITS.md)
 
