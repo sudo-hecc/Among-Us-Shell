@@ -43,7 +43,8 @@ pip3 install -r requirements.txt
 - `exit` launches into your default terminal such as `zsh` and displays a message based on your role.
 - On start, you have a 50/50 chance of being imposter or crew mate.
 - Uses `pygame` to play Among Us theme tune.
-- Uses `rich` for styling text in the terminal
+- Uses `rich` for styling text in the terminal.
+- Uses `readline` to fix the problems caused by the ASCII codes from `rich`.
 
 ### Note:
 If you are on Windows, using Powershell is recommended for the ASCII escape codes used by [`rich`](https://github.com/Textualize/rich)
