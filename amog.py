@@ -15,7 +15,7 @@ try:
     theme_path = os.path.join(script_dir, "themetune.mp3")
     pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=512)
     pygame.mixer.music.load(theme_path)
-    pygame.mixer.music.play(-1)
+    pygame.mixer.music.play()
     pygame.mixer.music.set_volume(1.0)  # Set volume to maximum (1.0)
 except pygame.error as e:
     print(f"[red]Error loading theme tune: {e}[/red]")
