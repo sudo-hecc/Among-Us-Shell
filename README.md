@@ -66,3 +66,4 @@ Credits can be viewed at [`CREDITS.md`](./CREDITS.md)
 **Also, this might be a good shell for Amog OS users or anyone who does a lot of python work in a terminal (works best for Unix terminals)**
 
 # DO NOT BE SUS 🤨
+**SERIOUSLY, DO NOT be *sus*** and look, it ended on *line 69*
