@@ -24,6 +24,7 @@ except pygame.error as e:
 sys.stdout.write("\033]0;SUSSY SHELL\a")
 sys.stdout.flush()
 
+#====IMPORTANT VARIABLES====
 console = Console()
 console.print("[blue]Welcome to SUSSY SHELL[/blue]")
 
@@ -32,12 +33,14 @@ if role == "imposter":
     console.print("[red]You are the Imposter. Kill everyone[/red]")
 else:
     console.print("[green]You are a Crewmate. Find the imposter[/green]")
+location = "CAFETERIA"
 
 def main():
     global role
+    global location
     while True:
         try:
-            user_input = console.input(f"[blue]{os.getcwd()} TASK: [/blue]")
+            user_input = console.input(f"[blue]Location: {location} {os.getcwd()} TASK: [/blue]")
 
             if user_input == "exit":
                 if role == "imposter":
@@ -100,6 +103,14 @@ def main():
                 else:
                     console.print("[red]You are now the Imposter. Kill everyone[/red]")
                     role = "imposter"
+
+            elif user_input.startswith("impo cd"):
+                if role == "imposter":
+                    location = user_input[8:].upper()
+                else:
+                    console.print(f"[bold red]AYO THAT SUS! WHY ARE YOU TRYING TO VENT TO {user_input[8:]}?![/bold red]")
+                    
+
             
             else:
                 try:
